@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>live2d-demo</title>
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Live2DCubismCore -->
+    <script src="js/frame/live2dcubismcore.min.js"></script>
+    <!-- Include Pixi. -->
+    <script src="js/frame/pixi.min.js"></script>
+    <!-- Include Cubism Components. -->
+    <script src="js/live2dcubismframework.js"></script>
+    <script src="js/live2dcubismpixi.js"></script>
+    <!-- User's Script -->
+    <script src="js/l2d.js"></script>
+    <script src="js/main.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Canvas -->
+    <div class="Canvas"  id="L2dCanvas"></div>
+    <script>
+        var config = {
+            width: 800,//window.innerWidth,
+            height: 600,//window.innerHeight,
+            right: '-300px',
+            bottom: '0px', 
+            //background: 'assets/bg/bg_night.png', 
+            basePath: 'https://cdn.jsdelivr.net/gh/alg-wiki/AzurLaneL2DViewer@gh-pages/assets',
+            role: 'aierdeliqi_4',//'zhala_2',//'xukufu_3',//'xuefeng_3',//'xianghe_2',//'wuqi_2',//'tierbici_2',
+            //'tianlangxing_3',//'shengluyisi_4',//'shengluyisi_3',//'shengluyisi_2',//'rangbaer_3',//'qibolin_2',
+            //'pinghai_6',//'nengdai_2',//'luyijiushi_2',//'longfeng_2',//'lisailiu_2',//'lafei_4',//'lafei',
+            //'junhe_5',//'jianye_2',//'huonululu_3',//'huangjiafangzhou_3',//'hemin_3',//'hemin_2',//'heitaizi_2',
+            //'genaisennao_2',//'dunkeerke_2',//'dujiaoshou_4',//'dafeng_4',//'dafeng_2',//'bisimai_2',//'banrenma_2',//'baerdimo_5',//'aisaikesi_4',
+
+            //xuefeng_3,xianghe_2,shengluyisi_3,shengluyisi_2,rangbaer_3,nengdai_2,luyijiushi_2,longfeng_2,lisailiu_2,junhe_5,hemin_2,heitaizi_2,dunkeerke_2,dafeng_2,bisimai_2,banrenma_2,baerdimo_5,aisaikesi_4
+            opacity: 1,
+            mobile: false
+        }
+        var v = new Viewer(config);  
+    </script>
+</body>
+</html>
+
+<script type="text/javascript">
+    var resourcesPath = 'https://cdn.jsdelivr.net/gh/wangstong/live2dm3/live2d/model/'; // 指定资源文件（模型）保存的路径
+    var backImageName = ''; // 指定背景图片
+    var modelDir = ['Hiyori']; // 指定需要加载的模型
+    initDefine(resourcesPath, backImageName, modelDir); // 初始化模型
+  </script>
